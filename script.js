@@ -57,10 +57,11 @@ const remove = function () {
       break;
     } else {
       //console.log("Error: employee not removed. Please check your input.");
-      if (removeName !== "") {
-        result.textContent = `${removeName} not removed: no such name in the array.`;
-      } else
+      if (removeName == "" || removeName == null) {
         result.textContent = `Please enter the name of the employee you wish to remove.`;
+      } else {
+        result.textContent = `${removeName} not removed: no such name in the array.`;
+      }
     }
   printArray();
 };
