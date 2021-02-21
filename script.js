@@ -37,7 +37,7 @@ const add = function () {
     result.textContent = `${answerName} was successfully added to the array!`;
   } else {
     //console.log("Error: employee not added. Please check your input.");
-    result.textContent = `Error: employee not added. Please check your input.`;
+    result.textContent = `Error: employee not added. Please check your input!`;
   }
   printArray();
   //document.querySelector(".jsTest").textContent = employees;
