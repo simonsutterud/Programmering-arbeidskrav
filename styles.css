@@ -1,15 +1,17 @@
 * {
   font-family: lato, sans-serif;
   font-weight: 400;
+  /*color: #333;*/
   color: #333;
 }
 
 body {
-  background: linear-gradient(
+  /*background: linear-gradient(
     to bottom right,
     rgb(112, 255, 99),
     rgb(0, 162, 22)
-  );
+  );*/
+  background: linear-gradient(to bottom right, #444, #333);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
@@ -20,10 +22,16 @@ body {
 h1 {
   width: 100%;
   text-align: center;
+  color: #fff;
 }
 
 p {
   text-align: center;
+  color: #fff;
+}
+
+.array_card p {
+  color: #333;
 }
 
 /* .container {
@@ -93,15 +101,15 @@ td {
   width: 450px;
 }
 
-.add:hover {
+.add {
   background: linear-gradient(to right, rgb(168, 255, 160), rgb(69, 212, 88));
 }
 
-.remove:hover {
-  background: linear-gradient(to right, rgb(255, 122, 122), rgb(255, 78, 78));
+.remove {
+  background: linear-gradient(to right, rgb(255, 147, 147), rgb(255, 93, 93));
 }
 
-.avg:hover {
+.avg {
   background: linear-gradient(to right, rgb(255, 213, 122), rgb(255, 205, 78));
 }
 
@@ -125,7 +133,7 @@ td {
 }
 
 .result {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .result:empty {
@@ -133,7 +141,7 @@ td {
 }
 
 .array_container {
-  height: 400px;
+  height: 430px;
   width: 100%;
   display: flex;
   justify-content: center;
