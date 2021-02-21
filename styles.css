@@ -1,16 +1,12 @@
+/* GENERAL */
+
 * {
   font-family: lato, sans-serif;
   font-weight: 400;
-  /*color: #333;*/
   color: #333;
 }
 
 body {
-  /*background: linear-gradient(
-    to bottom right,
-    rgb(112, 255, 99),
-    rgb(0, 162, 22)
-  );*/
   background: linear-gradient(to bottom right, #444, #333);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,26 +27,9 @@ p {
   color: #fff;
 }
 
-.array_card p {
-  color: #333;
-}
+/* BUTTONS */
 
-/* .container {
-  height: 200px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.2);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  align-self: center;
-  align-items: center;
-  margin: 50px 200px;
-}
-*/
-
-.container {
+.btn_container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -58,31 +37,18 @@ p {
   margin-top: 25px;
 }
 
-.container2 {
+.btn_container2 {
   width: 100%;
   display: flex;
   justify-content: center;
   justify-self: center;
 }
 
-.container3 {
+.btn_container3 {
   width: 100%;
   display: flex;
   justify-content: center;
   justify-self: center;
-}
-
-table {
-  width: 100%;
-  background-color: lightgray;
-  margin: 10px;
-  color: #333;
-}
-
-th,
-td {
-  border: 1px solid black;
-  margin: 10px;
 }
 
 .btn {
@@ -129,17 +95,19 @@ td {
   outline: none;
 }
 
+/*
 .hidden {
   display: none;
 }
+*/
+
+/* TEXT ABOVE BUTTONS */
 
 .result {
   font-size: 1.3rem;
 }
 
-.result:empty {
-  height: 2.45rem;
-}
+/* ARRAY */
 
 .array_container {
   height: 420px;
@@ -160,6 +128,10 @@ td {
   transition: 0.2s ease-in-out;
 }
 
+.array_card p {
+  color: #333;
+}
+
 .array_card:hover {
   box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
 }
@@ -170,6 +142,7 @@ td {
   text-align: left;
 }
 
+/*
 .skew {
   background: linear-gradient(to right, rgb(112, 255, 93), rgb(8, 102, 3));
   height: 200px;
@@ -189,3 +162,4 @@ td {
   right: 0px;
   top: 800px;
 }
+*/

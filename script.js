@@ -1,5 +1,11 @@
 "use strict";
 
+/*
+Note: code that I have commented out i.e. in the middle of a function, is mostly things I have tried
+that did not work/did not work as I wanted it to - ignore that. Also, I started with printing all the
+task to the console, so some of it is from that as well :)
+*/
+
 //selectors
 const addBtn = document.querySelector(".add");
 const removeBtn = document.querySelector(".remove");
@@ -12,6 +18,8 @@ const array = document.querySelector("#array");
 //const result = document.querySelector(".result");
 
 //functions
+
+//ADD EMPLOYEE
 const add = function () {
   let answerName = prompt("Enter employee's name:");
   let answerGender = prompt(
@@ -43,6 +51,7 @@ const add = function () {
   //document.querySelector(".jsTest").textContent = employees;
 };
 
+//REMOVE EMPLOYEE
 const remove = function () {
   let removeName = prompt(
     "Enter the name of the employee you wish to delete from the array:"
@@ -66,6 +75,7 @@ const remove = function () {
   printArray();
 };
 
+//COUNT EMPLOYEES
 const count = function () {
   let femaleCount = 0;
   let maleCount = 0;
@@ -79,12 +89,14 @@ const count = function () {
   printArray();
 };
 
+//SORT EMPLOYEES BY GENDER
 const sort = function (a, b) {
   employees.sort((a, b) => a.gender.localeCompare(b.gender));
   result.textContent = "Array sorted!";
   printArray();
 };
 
+//CALCULATE AVERAGE SALARY
 const calcAvg = function () {
   let avgSalary = 0;
   for (let i = 0; i < employees.length; i++) {
@@ -95,6 +107,7 @@ const calcAvg = function () {
   result.textContent = `The average salary is ${avgSalary}.`;
 };
 
+//PRINT ARRAY
 const printArray = function () {
   array.textContent = "";
   for (let i = 0; i < employees.length; i++) {
